@@ -1,5 +1,5 @@
-[dbserver]
-192.168.56.102  ansible_python_interpreter=/usr/bin/python3
+[servers]
+192.168.56.6  ansible_python_interpreter=/usr/bin/python3
+192.168.56.9  ansible_python_interpreter=/usr/bin/python3
 
-[fileserver]
-192.168.56.103  ansible_python_interpreter=/usr/bin/python3
+
