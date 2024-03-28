@@ -1,0 +1,9 @@
+---
+- name: Installing Nagios Binaries and Service
+  shell:  |
+    cd ~
+    cd /tmp/nagios-4.4.6
+    make install
+    make install-init
+    make install-config
+    make install-commandmode

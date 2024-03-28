@@ -1,0 +1,14 @@
+
+- name: Cleanup
+  shell:  |
+    userdel nagios
+    groupdel nagcmd
+    cd /tmp
+    rm -r *
+    cd ~
+    rm -r nagios-4.4.6
+    cd /etc/apache2/sites-enabled
+    rm nagios.conf
+    cd ~
+  ignore_errors: True
+    

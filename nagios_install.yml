@@ -1,0 +1,55 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - Part1
+
+- hosts: Ubuntu
+  become: true
+  roles:
+    - Part2
+
+- hosts: CentOS
+  become: true
+  roles:
+    - Part3
+
+- hosts: all
+  become: true
+  roles:
+    - Part4
+
+- hosts: all
+  become: true
+  roles:
+    - Part5
+
+- hosts: all
+  become: true
+  roles:
+    - Part6
+
+- hosts: Ubuntu
+  become: true
+  roles:
+    - Part7
+
+- hosts: CentOS
+  become: true
+  roles:
+    - Part8
+
+- hosts: all
+  become: true
+  roles:
+    - Part9
+
+- hosts: all
+  become: true
+  roles:
+    - Part10
+
+- hosts: all
+  become: true
+  roles:
+    - Part11
