@@ -1,0 +1,6 @@
+---
+- name: Verifying Nagios Configuration
+  shell:  |
+    cd ~
+    cd /tmp
+    /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg

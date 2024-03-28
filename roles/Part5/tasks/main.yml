@@ -1,0 +1,10 @@
+---
+- name: Downloading and Compiling Nagios
+  shell:  |
+    cd /tmp
+    wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
+    tar xzf nagios-*.tar.gz
+    cd ~
+    cd /tmp/nagios-4.4.6
+    ./configure --with-nagios-group=nagios --with-command-group=nagcmd
+    make all

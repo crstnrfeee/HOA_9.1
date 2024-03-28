@@ -1,0 +1,10 @@
+---
+- name: Installing Nagios Plugins
+  shell:  |
+    cd /tmp
+    wget https://nagios-plugins.org/download/nagios-plugins-2.3.3.tar.gz
+    tar xzf nagios-plugins-*.tar.gz
+    cd nagios-plugins-2.3.3
+    ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl
+    make
+    make install
