@@ -1,9 +1,0 @@
----
-- name: Installing Nagios Web Interface for CentOS
-  shell:  |
-    cd ~
-    cd /tmp/nagios-4.4.6
-    make install-webconf
-    expect: htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
-    a2enmod rewrite cgi
-    systemctl restart httpd
