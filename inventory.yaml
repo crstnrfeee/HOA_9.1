@@ -1,5 +1,0 @@
-[servers]
-192.168.56.6  ansible_python_interpreter=/usr/bin/python3
-192.168.56.9  ansible_python_interpreter=/usr/bin/python3
-
-
