@@ -1,5 +1,0 @@
----
-- name: Starting Nagios Service
-  shell:  |
-   systemctl start nagios.service
-   systemctl enable nagios.service
